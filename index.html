@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Stop watch</title>
+
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 97vh;
+                background: linear-gradient(to right, #0037ff, #a2a2a2);
+            }
+            .timer{
+                background:linear-gradient(to right, #000000, #3ae5ff);
+                width: 350px;
+                padding: 25px;
+                text-align: center;
+                border-radius: 10px;
+                width: 300px;
+                height: 400px;
+            }
+            .time{
+                font-size: 45px;
+                margin-top: 55px;
+                font-family: monospace;
+                color: rgb(0, 255, 255);
+            }
+            button{
+                font-size: 20px;
+                margin-left:10px;
+            }
+            .el{
+                margin-right: 0.000000001;
+                margin-top: 5px;
+                height: 240px;
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="timer">
+            <h1 class="time">00:00:00:00</h1>
+
+            <button class="start">start</button>
+            <button class="stop">stop</button>
+            <button class="reset">reset</button>
+            <button class="lap">lap</button>
+            <div class="el">
+
+            </div>
+        </div>
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
+
